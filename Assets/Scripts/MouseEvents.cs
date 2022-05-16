@@ -18,7 +18,7 @@ public class MouseEvents : MonoBehaviour
             {
                 PencilMove pencilMove = hit.collider.gameObject.GetComponent<PencilMove>();
                 pencilMove.pencilCanMove = true;
-                pencilMove.Movement(hit);
+                pencilMove.hit = hit;
             }
         }
     }

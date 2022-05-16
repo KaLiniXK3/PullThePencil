@@ -6,12 +6,12 @@ public class Bomb : MonoBehaviour
     [SerializeField] float power;
     [SerializeField] float radius;
     [SerializeField] float upForce;
-
+    [SerializeField] GameObject explosionParticle;
 
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Active"))
+        if (collision.gameObject.CompareTag("Active") || collision.gameObject.CompareTag("Bomb") || collision.gameObject.CompareTag("Deactive"))
         {
             StartCoroutine(BombExplosion());
         }
@@ -26,6 +26,8 @@ public class Bomb : MonoBehaviour
             if (rb != null)
             {
                 rb.AddExplosionForce(power, transform.position, radius, upForce, ForceMode.Impulse);
+                Instantiate(explosionParticle, transform.position, Quaternion.identity);
+
                 Destroy(gameObject);
             }
         }

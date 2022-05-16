@@ -8,6 +8,8 @@ TagManager:
   - Ball
   - Pencil
   - Wall
+  - Deactive
+  - Bomb
   layers:
   - Default
   - TransparentFX
