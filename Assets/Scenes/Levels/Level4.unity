@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 438bb5734cedaa64d9b5b7a929f0a4c3, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -3947,6 +3947,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: pencilHolderTransparent
       objectReference: {fileID: 0}
+    - target: {fileID: 2858083877163342695, guid: 61f4e367657bbca4292582c0f5ef5d7c, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 457968505}
     - target: {fileID: 3234187649579729372, guid: 61f4e367657bbca4292582c0f5ef5d7c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -9726,7 +9730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392336428}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.643, y: -1.792, z: -0.525}
+  m_LocalPosition: {x: -0.602, y: -1.792, z: -0.411}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9745,8 +9749,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3436005, y: 0.10856128, z: 1.3539332}
-  m_Center: {x: -0.12591255, y: 0.15667248, z: -0.2342791}
+  m_Size: {x: 1.3436005, y: 0.10856128, z: 1.4583298}
+  m_Center: {x: -0.12591255, y: 0.15667248, z: -0.2864774}
 --- !u!114 &1392336431
 MonoBehaviour:
   m_ObjectHideFlags: 0

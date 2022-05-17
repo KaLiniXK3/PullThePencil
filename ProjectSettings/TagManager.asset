@@ -10,6 +10,8 @@ TagManager:
   - Wall
   - Deactive
   - Bomb
+  - Metal
+  - Transparent
   layers:
   - Default
   - TransparentFX

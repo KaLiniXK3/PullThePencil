@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
     public int completePercentage;
     bool levelCompleted;
     bool levelFailed;
-    float timer=4;
+    float timer = 4;
     bool startTimer;
     int second;
     int splitSecond;
@@ -54,15 +54,19 @@ public class GameManager : MonoBehaviour
 
         if (finishEvents.completedBallCount == 0)
             return;
-        completePercentage = Mathf.Abs((finishEvents.completedBallCount * 100) / activeBalls.Count);
-        completePercentageText.text = "%" + completePercentage.ToString();
-        startTimer = true;
+        if (!levelCompleted && !levelFailed)
+        {
+            completePercentage = Mathf.Abs((finishEvents.completedBallCount * 100) / activeBalls.Count);
+            completePercentageText.text = "%" + completePercentage.ToString();
+            startTimer = true;
+        }
+
         if (finishEvents.completedBallCount >= activeBalls.Count * requiredBallPercentage && !levelFailed)
         {
             levelCompleted = true;
             LevelCompleteEvents();
         }
-        if (startTimer)
+        if (startTimer && !levelCompleted && !levelFailed)
         {
             SetTime();
         }
@@ -107,7 +111,7 @@ public class GameManager : MonoBehaviour
     {
         timer -= Time.deltaTime;
         second = (int)(timer % 60);
-        splitSecond = (int)(timer*60)%60;
+        splitSecond = (int)(timer * 60) % 60;
         timerText.text = string.Format("{00:00}:{1:00}", second, splitSecond);
         if (timer <= 0 && !levelCompleted)
         {
