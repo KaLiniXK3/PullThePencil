@@ -12,9 +12,11 @@ public class Balls : MonoBehaviour
 
     public readonly BallDeactiveState deactiveState = new BallDeactiveState();
 
+    public bool startProcessCompleted;
     private void Start()
     {
         this.TransitionToState(this.deactiveState);
+        startProcessCompleted = true;
     }
 
     public void TransitionToState(BallBaseState state)
@@ -25,7 +27,7 @@ public class Balls : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
-            this.currentState.OnCollisionEnter(this, collision);
+        this.currentState.OnCollisionEnter(this, collision);
     }
 
 }

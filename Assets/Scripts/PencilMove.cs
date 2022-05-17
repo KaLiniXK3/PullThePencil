@@ -4,6 +4,14 @@ public class PencilMove : MonoBehaviour
 {
     public bool pencilCanMove;
     public RaycastHit hit;
+    Renderer rend;
+
+    private void Start()
+    {
+        rend = GetComponent<Renderer>();
+        Color colorRandom = Random.ColorHSV(0f, 1f, 1f, 1f, 0.5f, 1f);
+        rend.material.color = colorRandom;
+    }
     private void Update()
     {
         if (pencilCanMove)
