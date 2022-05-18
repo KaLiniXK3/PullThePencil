@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     public GameObject tapToContinueButton;
     public GameObject tapToRestart;
     public TextMeshProUGUI timerText;
+    
+    
 
 
     private void Start()
@@ -77,6 +79,8 @@ public class GameManager : MonoBehaviour
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
+            
+
         }
     }
 
@@ -88,6 +92,7 @@ public class GameManager : MonoBehaviour
             levelFailedText.SetActive(true);
             tapToRestart.SetActive(true);
             levelFailedEvents = true;
+            
         }
     }
 
@@ -115,5 +120,10 @@ public class GameManager : MonoBehaviour
             startTimer = false;
             LevelFailedEvents();
         }
+    }
+
+    public void IntroStart()
+    {
+
     }
 }

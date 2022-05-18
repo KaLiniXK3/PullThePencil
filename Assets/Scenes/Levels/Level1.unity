@@ -2914,6 +2914,7 @@ MonoBehaviour:
   tapToContinueButton: {fileID: 363091524}
   tapToRestart: {fileID: 169567986}
   timerText: {fileID: 698034483}
+  Canvas: {fileID: 0}
 --- !u!4 &457968506
 Transform:
   m_ObjectHideFlags: 0
