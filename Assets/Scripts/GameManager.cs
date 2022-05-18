@@ -63,6 +63,7 @@ public class GameManager : MonoBehaviour
         {
             levelCompleted = true;
             LevelCompleteEvents();
+            startTimer = false;
         }
         if (startTimer)
         {
@@ -116,6 +117,7 @@ public class GameManager : MonoBehaviour
         timerText.text = string.Format("{00:00}:{1:00}", second, splitSecond);
         if (timer <= 0 && !levelCompleted)
         {
+            timer = 0;
             levelFailed = true;
             startTimer = false;
             LevelFailedEvents();

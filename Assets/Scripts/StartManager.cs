@@ -29,4 +29,8 @@ public class StartManager : MonoBehaviour
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(activeSceneIndex + 1);
     }
+    public void Level1()
+    {
+        SceneManager.LoadScene(1);
+    }
 }
