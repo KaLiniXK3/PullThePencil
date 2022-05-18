@@ -108,6 +108,10 @@ public class GameManager : MonoBehaviour
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(activeSceneIndex);
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void SetTime()
     {
