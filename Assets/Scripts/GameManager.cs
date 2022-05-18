@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
     public GameObject tapToContinueButton;
     public GameObject tapToRestart;
     public TextMeshProUGUI timerText;
+    
+    
 
 
     private void Start()
@@ -65,6 +67,7 @@ public class GameManager : MonoBehaviour
         {
             levelCompleted = true;
             LevelCompleteEvents();
+            startTimer = false;
         }
         if (startTimer && !levelCompleted && !levelFailed)
         {
@@ -81,6 +84,8 @@ public class GameManager : MonoBehaviour
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
+            
+
         }
     }
 
@@ -92,6 +97,7 @@ public class GameManager : MonoBehaviour
             levelFailedText.SetActive(true);
             tapToRestart.SetActive(true);
             levelFailedEvents = true;
+            
         }
     }
 
@@ -106,6 +112,10 @@ public class GameManager : MonoBehaviour
         int activeSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(activeSceneIndex);
     }
+    public void Menu()
+    {
+        SceneManager.LoadScene(0);
+    }
 
     public void SetTime()
     {
@@ -115,9 +125,15 @@ public class GameManager : MonoBehaviour
         timerText.text = string.Format("{00:00}:{1:00}", second, splitSecond);
         if (timer <= 0 && !levelCompleted)
         {
+            timer = 0;
             levelFailed = true;
             startTimer = false;
             LevelFailedEvents();
         }
+    }
+
+    public void IntroStart()
+    {
+
     }
 }
