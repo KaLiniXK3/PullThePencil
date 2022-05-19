@@ -15,15 +15,15 @@ public class GameManager : MonoBehaviour
     float requiredBallPercentage;
     float requiredTimerPercentage;
     public int completePercentage;
-    bool levelCompleted;
-    bool levelFailed;
+    public bool levelCompleted;
+    public bool levelFailed;
     float timer = 4;
     bool startTimer;
     int second;
     int splitSecond;
     public bool gameSetted;
     bool levelCompleteEvents;
-    bool levelFailedEvents;
+    public bool levelFailedEvents;
 
     //UI
     public TextMeshProUGUI completePercentageText;
@@ -34,13 +34,14 @@ public class GameManager : MonoBehaviour
     public GameObject tapToContinueButton;
     public GameObject tapToRestart;
     public TextMeshProUGUI timerText;
-    
-    
+
+    SoundManager soundManager;
 
 
     private void Start()
     {
         requiredBallPercentage = 0.9f;
+        soundManager=FindObjectOfType<SoundManager>();
     }
 
     private void Update()
@@ -79,25 +80,27 @@ public class GameManager : MonoBehaviour
     {
         if (levelCompleted && !levelCompleteEvents)
         {
+            soundManager.PlaySound("win");
             Instantiate(fireWork, fireWork.transform.position, Quaternion.identity);
             blackBackground.SetActive(true);
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
-            
+
 
         }
     }
 
-    void LevelFailedEvents()
+    public void LevelFailedEvents()
     {
         if (levelFailed && !levelFailedEvents)
         {
+            soundManager.PlaySound("lose");
             blackBackground.SetActive(true);
             levelFailedText.SetActive(true);
             tapToRestart.SetActive(true);
             levelFailedEvents = true;
-            
+
         }
     }
 

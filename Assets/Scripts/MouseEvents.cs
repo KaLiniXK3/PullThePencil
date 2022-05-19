@@ -4,8 +4,10 @@ public class MouseEvents : MonoBehaviour
 {
     Camera cam;
     RaycastHit hit;
+    SoundManager soundManager;
     private void Start()
     {
+        soundManager = FindObjectOfType<SoundManager>();
         cam = GetComponent<Camera>();
     }
     private void Update()
@@ -19,6 +21,8 @@ public class MouseEvents : MonoBehaviour
                 PencilMove pencilMove = hit.collider.gameObject.GetComponent<PencilMove>();
                 pencilMove.pencilCanMove = true;
                 pencilMove.hit = hit;
+                soundManager.PlaySound("pencilMove");
+
             }
         }
     }

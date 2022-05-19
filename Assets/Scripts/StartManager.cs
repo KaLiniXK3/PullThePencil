@@ -10,9 +10,8 @@ public class StartManager : MonoBehaviour
     public GameObject IntroVideo;
     public GameObject StartMenu;
     
-    void Start()
+    void Awake()
     {
-        StartMenu.SetActive(false);
         StartCoroutine(Wait());
     }
     
