@@ -22,7 +22,6 @@ public class MouseEvents : MonoBehaviour
                 pencilMove.pencilCanMove = true;
                 pencilMove.hit = hit;
                 soundManager.PlaySound("pencilMove");
-
             }
         }
     }
