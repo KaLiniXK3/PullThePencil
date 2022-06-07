@@ -134,9 +134,4 @@ public class GameManager : MonoBehaviour
             LevelFailedEvents();
         }
     }
-
-    public void IntroStart()
-    {
-
-    }
 }
