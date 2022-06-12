@@ -16,6 +16,7 @@ public class BallActiveState : BallBaseState
 
     public override void OnCollisionEnter(Balls ball, Collision collision)
     {
+
     }
 
 }

@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -22,7 +23,7 @@ public class GameManager : MonoBehaviour
     int second;
     int splitSecond;
     public bool gameSetted;
-    bool levelCompleteEvents;
+    public bool levelCompleteEvents;
     public bool levelFailedEvents;
 
     //UI
@@ -36,12 +37,19 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI timerText;
 
     SoundManager soundManager;
+    [SerializeField] ThrowPen throwPen;
+    bool startShootEvent;
+    //New Camera Position&Rotation
+    [SerializeField] Camera cam;
+    Vector3 oldCameraPos = new Vector3(0, 1, -8);
+    Vector3 newCameraPos = new Vector3(0, 1, 9.5f);
+    Quaternion newCameraRot = new Quaternion(0f, 180f, 0f, 0f);
 
 
     private void Start()
     {
         requiredBallPercentage = 0.9f;
-        soundManager=FindObjectOfType<SoundManager>();
+        soundManager = FindObjectOfType<SoundManager>();
     }
 
     private void Update()
@@ -66,17 +74,21 @@ public class GameManager : MonoBehaviour
 
         if (finishEvents.completedBallCount >= activeBalls.Count * requiredBallPercentage && !levelFailed)
         {
-            levelCompleted = true;
-            LevelCompleteEvents();
+            startShootEvent = true;
+            StartShootEvents();
+            //levelCompleted = true;
+            //LevelCompleteEvents();
             startTimer = false;
         }
         if (startTimer && !levelCompleted && !levelFailed)
         {
             SetTime();
         }
+
+
     }
 
-    void LevelCompleteEvents()
+    public void LevelCompleteEvents()
     {
         if (levelCompleted && !levelCompleteEvents)
         {
@@ -87,10 +99,19 @@ public class GameManager : MonoBehaviour
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
 
-
         }
     }
 
+    void StartShootEvents()
+    {
+        if (startShootEvent == true)
+        {
+            cam.transform.position = Vector3.Slerp(cam.transform.position, newCameraPos, Time.deltaTime * 1f);
+            cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, newCameraRot, Time.deltaTime * 0.4f);
+            throwPen.enabled = true;
+            startShootEvent = false;
+        }
+    }
     public void LevelFailedEvents()
     {
         if (levelFailed && !levelFailedEvents)

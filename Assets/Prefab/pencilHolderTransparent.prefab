@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 143995127983689760}
   - component: {fileID: 2120386035605064570}
   - component: {fileID: 9166849921723954494}
-  - component: {fileID: 5729894952486452698}
+  - component: {fileID: 3045693322068184725}
   m_Layer: 0
   m_Name: transparent
   m_TagString: Untagged
@@ -131,7 +131,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5729894952486452698
+--- !u!64 &3045693322068184725
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 7105008268828199418}
   - component: {fileID: 6816974016514065735}
   - component: {fileID: 9144253756733562548}
-  - component: {fileID: 6816974016514065728}
+  - component: {fileID: 1159707836926895734}
   m_Layer: 0
   m_Name: head
   m_TagString: Untagged
@@ -229,7 +229,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6816974016514065728
+--- !u!64 &1159707836926895734
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

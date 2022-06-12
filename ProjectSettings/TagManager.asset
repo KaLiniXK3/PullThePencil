@@ -12,6 +12,8 @@ TagManager:
   - Bomb
   - Metal
   - Transparent
+  - Explose Ball
+  - Big Ball
   layers:
   - Default
   - TransparentFX
