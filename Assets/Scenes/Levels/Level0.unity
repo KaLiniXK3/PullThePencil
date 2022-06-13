@@ -2222,6 +2222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   penPrefab: {fileID: 8075187547404960642, guid: bf9343d4bd6790c409be31d06b7f14d8, type: 3}
   spawnBall: {fileID: 2095927644}
+  spawnBallScript: {fileID: 2095927646}
   gameManager: {fileID: 457968505}
   cam: {fileID: 963194227}
   shootSpeed: 500
@@ -13950,7 +13951,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPrefab: {fileID: 4908181200262807692, guid: 06dbbb7c333070947a6999370f947864, type: 3}
+  bigBallPrefab: {fileID: 4908181200262807692, guid: abb5ece433d7bf546b785954c4f22b44, type: 3}
+  throwPen: {fileID: 203879281}
   ballAmount: 12
+  canSpawnSmallBall: 0
+  spawnCompleted: 0
+  startCoroutine: 0
 --- !u!1001 &2104218750
 PrefabInstance:
   m_ObjectHideFlags: 0

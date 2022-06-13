@@ -84,8 +84,6 @@ public class GameManager : MonoBehaviour
         {
             SetTime();
         }
-
-
     }
 
     public void LevelCompleteEvents()
@@ -98,7 +96,6 @@ public class GameManager : MonoBehaviour
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
-
         }
     }
 
@@ -112,6 +109,7 @@ public class GameManager : MonoBehaviour
             startShootEvent = false;
         }
     }
+
     public void LevelFailedEvents()
     {
         if (levelFailed && !levelFailedEvents)
@@ -121,7 +119,6 @@ public class GameManager : MonoBehaviour
             levelFailedText.SetActive(true);
             tapToRestart.SetActive(true);
             levelFailedEvents = true;
-
         }
     }
 

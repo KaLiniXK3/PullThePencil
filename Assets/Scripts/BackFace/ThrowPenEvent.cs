@@ -11,11 +11,19 @@ public class ThrowPenEvent : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Explose Ball") && canDestroyBall)
+        if (collision.gameObject.CompareTag("Explose Ball") || collision.gameObject.CompareTag("Big Ball"))
         {
-            Destroy(collision.gameObject);
-            canDestroyBall = false;
+            DestroyBall(collision.gameObject);
+        }
+    }
+
+    void DestroyBall(GameObject collision)
+    {
+        if (canDestroyBall)
+        {
+            Destroy(collision);
             throwPen.ballAmount--;
+            canDestroyBall = false;
         }
     }
 }

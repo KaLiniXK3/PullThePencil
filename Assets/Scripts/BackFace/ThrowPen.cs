@@ -4,6 +4,7 @@ public class ThrowPen : MonoBehaviour
 {
     [SerializeField] GameObject penPrefab;
     [SerializeField] GameObject spawnBall;
+    [SerializeField] SpawnBall spawnBallScript;
     [SerializeField] GameManager gameManager;
     [SerializeField] Camera cam;
     [SerializeField] float shootSpeed;
@@ -12,14 +13,10 @@ public class ThrowPen : MonoBehaviour
     bool canSpawn = true;
     [SerializeField] float spawnCoolDown;
     public int ballAmount;
-    private void Start()
-    {
-        ballAmount = spawnBall.gameObject.transform.childCount;
-    }
     private void Update()
     {
         Debug.Log(ballAmount);
-        if (ballAmount == 0 && !gameManager.levelCompleted)
+        if (ballAmount == 0 && !gameManager.levelCompleted && spawnBallScript.canSpawnSmallBall)
         {
             gameManager.levelCompleted = true;
             gameManager.LevelCompleteEvents();
