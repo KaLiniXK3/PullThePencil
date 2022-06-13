@@ -38,7 +38,11 @@ public class GameManager : MonoBehaviour
 
     SoundManager soundManager;
     [SerializeField] ThrowPen throwPen;
+    [SerializeField] GameObject blueBackground;
     bool startShootEvent;
+    bool completedShootEvent;
+    bool closeBlueBackground;
+
     //New Camera Position&Rotation
     [SerializeField] Camera cam;
     Vector3 oldCameraPos = new Vector3(0, 1, -8);
@@ -84,6 +88,10 @@ public class GameManager : MonoBehaviour
         {
             SetTime();
         }
+        if (completedShootEvent && !closeBlueBackground)
+        {
+            StartCoroutine(CloseBlueBackground());
+        }
     }
 
     public void LevelCompleteEvents()
@@ -101,18 +109,26 @@ public class GameManager : MonoBehaviour
 
     void StartShootEvents()
     {
-        if (startShootEvent == true)
+        if (startShootEvent)
         {
             cam.transform.position = Vector3.Slerp(cam.transform.position, newCameraPos, Time.deltaTime * 1f);
             cam.transform.rotation = Quaternion.Slerp(cam.transform.rotation, newCameraRot, Time.deltaTime * 0.4f);
             throwPen.enabled = true;
             startShootEvent = false;
+            completedShootEvent = true;
         }
     }
 
+    IEnumerator CloseBlueBackground()
+    {
+        blueBackground.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        blueBackground.SetActive(false);
+        closeBlueBackground = true;
+    }
     public void LevelFailedEvents()
     {
-        if (levelFailed && !levelFailedEvents)
+        if (levelFailed && !levelFailedEvents && !startShootEvent)
         {
             soundManager.PlaySound("lose");
             blackBackground.SetActive(true);
