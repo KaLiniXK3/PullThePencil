@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &4664527
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -300,6 +301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &70065254
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -428,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &72307916
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -561,6 +564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &142196660
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -689,6 +693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &149751776
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -802,6 +807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &152157078
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -945,6 +951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &172632315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1058,6 +1065,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &188833842
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1201,6 +1209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &193950166
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1314,6 +1323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &222951286
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1536,6 +1546,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!1001 &324671819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1691,6 +1702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &330194445
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1834,6 +1846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &372457779
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2069,6 +2082,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &401054451
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2212,6 +2226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &442830345
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2338,6 +2353,24 @@ MonoBehaviour:
   - {fileID: 968908298}
   - {fileID: 906233792}
   activeBalls: []
+  finishEvents: {fileID: 0}
+  completePercentage: 0
+  levelCompleted: 0
+  levelFailed: 0
+  gameSetted: 0
+  levelCompleteEvents: 0
+  levelFailedEvents: 0
+  completePercentageText: {fileID: 0}
+  fireWork: {fileID: 0}
+  blackBackground: {fileID: 0}
+  levelCompletedText: {fileID: 0}
+  levelFailedText: {fileID: 0}
+  tapToContinueButton: {fileID: 0}
+  tapToRestart: {fileID: 0}
+  timerText: {fileID: 0}
+  throwPen: {fileID: 0}
+  blueBackground: {fileID: 0}
+  cam: {fileID: 0}
 --- !u!4 &457968506
 Transform:
   m_ObjectHideFlags: 0
@@ -2402,6 +2435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &498328173
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2530,6 +2564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &525918901
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2643,6 +2678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &544021993
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2883,6 +2919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &617459731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2972,6 +3009,7 @@ GameObject:
   m_Component:
   - component: {fileID: 705507995}
   - component: {fileID: 705507994}
+  - component: {fileID: 705507996}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -3056,6 +3094,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &705507996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705507993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
 --- !u!1 &731825471
 GameObject:
   m_ObjectHideFlags: 0
@@ -3090,6 +3148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &731825473
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3273,6 +3332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &752923817
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3448,6 +3508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &759285996
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3576,6 +3637,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &861033237
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3704,6 +3766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &906233793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3817,6 +3880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &910346149
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3960,6 +4024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &916082610
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4088,6 +4153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &946672268
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4285,6 +4351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &968908299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4413,6 +4480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &971694899
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4556,6 +4624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &975691089
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4900,6 +4969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1217241966
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5047,6 +5117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1232196733
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5190,6 +5261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1239264886
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5318,6 +5390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1251936592
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5446,6 +5519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1256999971
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5574,6 +5648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1271506002
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5702,6 +5777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1275163377
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5815,6 +5891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1417359542
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5943,6 +6020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1421576941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6086,6 +6164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1504975181
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6214,6 +6293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1544237142
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6342,6 +6422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1555575593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6455,6 +6536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1674870409
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6808,6 +6890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1899236097
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6941,6 +7024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1921533860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7069,6 +7153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1935407869
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7197,6 +7282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &1945839888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7402,6 +7488,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &2013808263
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7530,6 +7617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &2014050064
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7658,6 +7746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &2047968280
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7786,6 +7875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &2052469115
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7919,6 +8009,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 457968505}
+  startProcessCompleted: 0
 --- !u!54 &2065581331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8258,6 +8349,8 @@ MonoBehaviour:
   power: 10
   radius: 1.25
   upForce: 1
+  explosionParticle: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!135 &919132148982611771
 SphereCollider:
   m_ObjectHideFlags: 0
