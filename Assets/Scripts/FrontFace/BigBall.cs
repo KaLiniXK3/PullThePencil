@@ -10,7 +10,7 @@ public class BigBall : MonoBehaviour
         if (collision.gameObject.CompareTag("Active"))
         {
             Destroy(gameObject);
-            ballAmount = Random.Range(20, 40);
+            ballAmount = Random.Range(10, 20);
             for (int i = 0; i < ballAmount; i++)
             {
                 GameObject ball = Instantiate(ballPrefab, transform.position, Quaternion.identity) as GameObject;

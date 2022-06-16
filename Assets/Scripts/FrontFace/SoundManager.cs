@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
-    public AudioClip ballTouch, bomb, intoTheBox, lose, pencilMove, win;
+    public AudioClip ballTouch, bomb, intoTheBox, lose, pencilMove, win, bigBallPop;
     [SerializeField] AudioSource audioSource;
 
 
@@ -31,6 +31,7 @@ public class SoundManager : MonoBehaviour
         lose = Resources.Load<AudioClip>("lose");
         pencilMove = Resources.Load<AudioClip>("pencilMove");
         win = Resources.Load<AudioClip>("win");
+        bigBallPop = Resources.Load<AudioClip>("bigBallPop");
     }
 
     public void PlaySound(string clip)
@@ -54,6 +55,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "win":
                 audioSource.PlayOneShot(win);
+                break;
+            case "bigBallPop":
+                audioSource.PlayOneShot(bigBallPop);
                 break;
         }
     }
