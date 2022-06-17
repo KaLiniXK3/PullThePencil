@@ -22,6 +22,7 @@ public class ThrowPenEvent : MonoBehaviour
         if (canDestroyBall)
         {
             Destroy(collision);
+            throwPen.soundManager.PlaySound("bigBallPop");
             throwPen.ballAmount--;
             canDestroyBall = false;
         }

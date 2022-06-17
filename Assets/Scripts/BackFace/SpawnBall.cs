@@ -6,6 +6,7 @@ public class SpawnBall : MonoBehaviour
     [SerializeField] GameObject ballPrefab;
     [SerializeField] GameObject bigBallPrefab;
     [SerializeField] ThrowPen throwPen;
+    public SoundManager soundManager;
     [SerializeField] GameObject blueBackground;
     float boundariesX = 2.3f;
     float boundariesY = 3.35f;

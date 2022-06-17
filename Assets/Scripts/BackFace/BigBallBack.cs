@@ -9,6 +9,7 @@ public class BigBallBack : MonoBehaviour
         if (collision.gameObject.CompareTag("Pencil"))
         {
             spawnBall.SmallBallSpawner();
+            spawnBall.soundManager.PlaySound("bigBallPop");
             Destroy(gameObject);
         }
     }

@@ -7,6 +7,7 @@ public class ThrowPen : MonoBehaviour
     [SerializeField] SpawnBall spawnBallScript;
     [SerializeField] GameManager gameManager;
     [SerializeField] Camera cam;
+    public SoundManager soundManager;
     [SerializeField] float shootSpeed;
     RaycastHit hit;
     Vector3 direction;
