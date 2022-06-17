@@ -7635,10 +7635,82 @@ PrefabInstance:
       propertyPath: startBalls.Array.data[59]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8915829130364663688, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.38039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130364663688, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130364663688, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130364663690, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130649712416, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130649712430, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8867924
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130649712430, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_Color.g
+      value: 0.7820404
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130649712430, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_Color.r
+      value: 0.14640439
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_text
+      value: LEVEL FAILED
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.38039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.0627451
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.76862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -4465404691644673060, guid: 07e6c2587d872a34b81632cf36678b58, type: 2}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4284551364
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747588, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747590, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_Name
+      value: Level Failed
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829130742747590, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8915829130928191508, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
       propertyPath: bigBallPop
       value: 
       objectReference: {fileID: 8300000, guid: de866e7d715d3864b8074be69ce0b5f3, type: 3}
+    - target: {fileID: 8915829131010668909, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8915829131163403792, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -7686,6 +7758,14 @@ PrefabInstance:
     - target: {fileID: 8915829131163403795, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
       propertyPath: m_Name
       value: LevelBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829131167032975, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8915829131273202953, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11f12e7df97271f48a7785a2fa020e82, type: 3}
