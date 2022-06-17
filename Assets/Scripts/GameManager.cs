@@ -35,8 +35,9 @@ public class GameManager : MonoBehaviour
     public GameObject tapToContinueButton;
     public GameObject tapToRestart;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI levelNumber;
 
-    SoundManager soundManager;
+    public SoundManager soundManager;
     [SerializeField] ThrowPen throwPen;
     [SerializeField] GameObject blueBackground;
     bool startShootEvent;
@@ -54,6 +55,7 @@ public class GameManager : MonoBehaviour
     {
         requiredBallPercentage = 0.9f;
         soundManager = FindObjectOfType<SoundManager>();
+        levelNumber.text = "Level " + SceneManager.GetActiveScene().buildIndex;
     }
 
     private void Update()
@@ -104,7 +106,7 @@ public class GameManager : MonoBehaviour
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
-            
+
         }
     }
 
@@ -161,7 +163,7 @@ public class GameManager : MonoBehaviour
         second = (int)(timer % 60);
         splitSecond = (int)(timer * 60) % 60;
         timerText.text = string.Format("{00:00}:{1:00}", second, splitSecond);
-        if (timer <= 0 && !levelCompleted)
+        if (timer <= 0 && !levelCompleted && !startShootEvent && !closeBlueBackground)
         {
             timer = 0;
             levelFailed = true;

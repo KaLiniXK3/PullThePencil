@@ -16,7 +16,6 @@ public class ThrowPen : MonoBehaviour
     public int ballAmount;
     private void Update()
     {
-        Debug.Log(ballAmount);
         if (ballAmount == 0 && !gameManager.levelCompleted && spawnBallScript.canSpawnSmallBall)
         {
             gameManager.levelCompleted = true;

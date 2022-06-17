@@ -25,15 +25,15 @@ public class SpawnBall : MonoBehaviour
 
     public void BigBallSpawner()
     {
-        float randomPosX = Random.Range(-boundariesX, boundariesX);
-        float randomPosY = Random.Range(-boundariesY, boundariesY);
+        float randomPosX = Random.Range(-boundariesX + 2, boundariesX - 2);
+        float randomPosY = Random.Range(-boundariesY + 2, boundariesY - 2);
         Vector3 randomSpawnPos = new Vector3(randomPosX, randomPosY, bigBallPosZ);
         GameObject ball = Instantiate(bigBallPrefab, randomSpawnPos, Quaternion.identity) as GameObject;
         ball.GetComponent<BigBallBack>().spawnBall = GetComponent<SpawnBall>();
     }
     public void SmallBallSpawner()
     {
-        ballAmount = Random.Range(10, 20);
+        ballAmount = Random.Range(5, 10);
         canSpawnSmallBall = true;
 
         for (int i = 0; i < ballAmount; i++)
@@ -47,6 +47,5 @@ public class SpawnBall : MonoBehaviour
             ball.transform.parent = transform;
             throwPen.ballAmount = transform.childCount;
         }
-        Debug.Log("WORK AMOUNT");
     }
 }
