@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
             levelCompletedText.SetActive(true);
             tapToContinueButton.SetActive(true);
             levelCompleteEvents = true;
+            
         }
     }
 
